@@ -1,0 +1,43 @@
+body{
+    font-family: Verdana,"Times New Roman", Times, serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav{
+    background-color: rgb(245, 159, 159);
+    padding: 25px;
+    position: sticky;
+    top: 0px;
+}
+
+h2 {
+    color: #007BFF;
+}
+
+section{
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(0, 255, 13);
+    text-shadow: 1px 1px 5px rgb(89, 0, 255);
+}

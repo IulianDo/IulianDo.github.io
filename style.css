@@ -14,10 +14,16 @@ header {
 }
 
 nav{
-    background-color: rgb(245, 159, 159);
+    background: #007BFF;
     padding: 25px;
+    text-align: center;
     position: sticky;
     top: 0px;
+}
+
+nav a {
+    color: pink;
+    text-decoration: none;
 }
 
 h2 {
@@ -31,6 +37,7 @@ section{
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
 
 a {
     color: #007BFF;

@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Iulian</title>
-    <link rel="stylesheet" href="style.css">
+    <link id="stylesheet" rel="stylesheet" href="style_dark.css">
+
+    <script>
+        window.onload = function() {
+            var savedStyle = localStorage.getItem("selectedStyle");
+            if (savedStyle) {
+                document.getElementById("stylesheet").setAttribute("href", savedStyle);
+            }
+        };
+    </script>
 </head>
 <body>
     <header>
         <h1>Welcome to Iulian's website</h1>
         <p>This website is here to tell you more about me and why you should hire me</p>
+        <button onclick="switchStyle()">Switch Style</button>
     </header>
 
     <section>
@@ -18,10 +28,19 @@
         </h2>
         <ul>
             <li><a href="everything.html">Show me everything</a></li>
-            <li>WIP</li>
+            <li><a href="https://nova-i3.itch.io" target="_blank">Show me games made by I.D.</a></li>
             <li>These will be filtered versions</li>
             <li>WIP</li>
         </ul>
     </section>
+    <script>
+        function switchStyle() {
+        var currentStyle = document.getElementById("stylesheet").getAttribute("href");
+        var newStyle = currentStyle === "style_dark.css" ? "style_light.css" : "style_dark.css";
+        console.log(newStyle);
+        document.getElementById("stylesheet").setAttribute("href", newStyle);
+        localStorage.setItem("selectedStyle", newStyle); // Save the style in local storage
+    }
+    </script>
 </body>
 </html>

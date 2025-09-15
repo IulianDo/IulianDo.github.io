@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Iulian</title>
-    <link rel="stylesheet" href="style.css">
+    <link id="stylesheet" rel="stylesheet" href="style_dark.css">
+
+    <script>
+        window.onload = function() {
+            var savedStyle = localStorage.getItem("selectedStyle");
+            if (savedStyle) {
+                document.getElementById("stylesheet").setAttribute("href", savedStyle);
+            }
+        };
+    </script>
+    
 </head>
 <body>
 
@@ -25,7 +35,7 @@
 
 <section>
     <p>
-        Hello I’m Iulian and I love to work with technology. 
+        Hello I'm Iulian and I love to work with technology. 
         It fascinates and intrigues me. 
         I am a keen programmer with experience building multiple, self-driven projects, in Python, JavaScript, C#, C, C++, Cool, HTML, PHP, CSS and Java. 
         I enjoy the theoretical and practical sides of programming and am looking to join a team so that I may expand my horizons. 
@@ -103,8 +113,8 @@
     </section>
 
     <section>
-        <h2>Animetion WIP</h2>
-        <p>I am currently working on animation to add into my game.</p>
+        <h3>Animetion WIP</h3>
+        <p>I am currently working on 3D animation to add into my game.</p>
     </section>
 </skills>
 
@@ -114,8 +124,19 @@
     <h2>Itch.io page</h2>
 
     <section>
+        <h3>What is Itch.io</h3>   
+        <p>Itch.io is a website dedicated to indie game developers. It serves as a platform for publishing games, hosting game jams, sharing assets, and playing games. I maintain a page there showcasing several of my creations.</p>
+    </section>
+
+    <section>
+        <h3>My Creations</h3>   
+        <p>My game development journey has involved several passion projects, each created with a specific learning goal in mind. For example, Soul Scale was developed during a game jam where i had to learn skeletal mesh creation and physics implementation. Please note that some games on my page are no longer available for download, as I've chosen to remove them. However, most of my games were developed for game jams, indicated by a "Submission to GMTK Game Jam" label in the top right corner of each game page. This label highlights the time-constrained and rule-based nature of these projects.</p>
+    </section>
+
+
+    <section>
         <h3>Itch.io page</h3>   
-        <p>I have an itch.io page where I put games that I have made. Currently there are none that are good; however, you can look forward to a quality online card game. Check out my games on <a href="https://nova-i3.itch.io" target="_blank">itch.io</a>!</p>
+        <iframe frameborder="0" src="https://itch.io/embed/3781078?linkback=true" width="552" height="167"><a href="https://nova-i3.itch.io/just-20-more-rooms">Just 20 More Rooms by Nova_i3</a></iframe>
     </section>
 </links>
 
@@ -126,7 +147,7 @@
 
     <section>
         <h3>Demonstrator</h3>
-        <p>As a demonstrator at Queen Mary University of London, I collaborated with colleagues to provide marking support and assistance to students. This included offering feedback on their work and answering their questions. My responsibilities encompassed demonstrating key concepts in object-oriented programming, algorithms, and data structures, ensuring students grasped these fundamental principles and others.</p>
+        <p>As a demonstrator at Queen Mary University of London, I collaborated with colleagues to provide marking support and assistance to students. This included offering feedback on their work and answering their questions. My responsibilities encompassed demonstrating key concepts in object-oriented programming, algorithms, and data structures, ensuring students grasped these fundamental principles and others.</p>    
     </section>
 
     <section>

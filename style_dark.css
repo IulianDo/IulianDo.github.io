@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: rgb(61, 61, 61);
     color: #333;
 }
 
@@ -10,6 +10,7 @@ header {
 
 nav{
     background: #007BFF;
+    border-color: white;
 }
 
 nav a {

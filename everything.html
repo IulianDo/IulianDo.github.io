@@ -26,12 +26,14 @@
     <h1>Iulian Dogarescu</h1>
     <p>Graduated from Queen Mary University of London</p>
 </header>
-<nav>
-    <a href="index.html"><button>⌂</button></a>
-    <a href="#About me">About me</a>|
-    <a href="#Skills">Skills</a>|
-    <a href="#Links">Links</a>|
+<nav id="Sidebar" style="left: -105px;">
+    <button id="SideMarker" onclick="switchStyle()">≣</button>
+    <a href="index.html">Back</a>
+    <a href="#About me">About me</a>
+    <a href="#Skills">Skills</a>
+    <a href="#Links">Links</a>
     <a href="#Work">Work</a>
+    </ul>
 </nav>
 
 <br  id="About me">
@@ -46,11 +48,10 @@
         I am a keen programmer with experience building multiple, self-driven projects, in Python, JavaScript, C#, C, C++, Cool, HTML, PHP, CSS and Java. 
         I enjoy the theoretical and practical sides of programming and am looking to join a team so that I may expand my horizons. 
         I also enjoy various other things and if you continue looking I am certain you will see.
-
-        If you are looking at this page and are wondering why it is so plane, the reason ir simple. 
     </p>
     <p>
-        I'm working on something else at the moment. 
+        If you are looking at this page and are wondering why it is so plane, the reason ir simple. 
+        I'm working on something else at the moment. This would be a personal hobbie like a game. 
     </p>
 </section>
 
@@ -175,6 +176,15 @@
         <p>I am currently employed as a tutor at JB Tutors, where I provide instruction to a diverse student base. My tutoring expertise encompasses Computer Science (up to A-Level), English (up to GCSE), Mathematics (up to GCSE), and all sciences. </p>
     </section>
 </work>
+
+<script>
+    function switchStyle() {
+        var currentStyle = document.getElementById("Sidebar").getAttribute("style");
+        var newStyle = currentStyle === "left: -105px;" ? "left: 0px;" : "left: -105px;";
+        document.getElementById("Sidebar").setAttribute("style", newStyle);
+    }
+
+</script>
 
 </body>
 </html>

@@ -15,15 +15,34 @@ header {
 
 nav{
     background: #007BFF;
-    padding: 25px;
-    text-align: center;
-    position: sticky;
-    top: 0px;
+    padding: 20px;
+    text-align:center;
+    position: fixed;
+    left: -105px;
+    top:0px;
+    width: 60px;
+    height: 100%;
+    border-style: solid;
+    border-right-width: 2px;
+    border-color: black;
+}
+
+#SideMarker{
+    background: inherit;
+    position:relative;
+    left: 75px;
+    width: 50px;
+    height: 50px;
+    border-left: 0px;
+    border-color: inherit;
+    color: white;
+    font-size: 20px;
 }
 
 nav a {
     color: pink;
-    text-decoration: none;
+    display: block;
+    margin-top: 20px;
 }
 
 h2 {

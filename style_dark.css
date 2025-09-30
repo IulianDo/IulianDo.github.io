@@ -1,44 +1,31 @@
 body{
-    font-family: Verdana,"Times New Roman", Times, serif;
     background-color: black;
     color: #333;
-    margin: 0;
-    padding: 20px;
 }
 
 header {
     background: #007BFF;
     color: white;
-    padding: 10px 0;
-    text-align: center;
 }
 
 nav{
     background: #007BFF;
-    padding: 25px;
-    text-align: center;
-    position: sticky;
-    top: 0px;
 }
 
 nav a {
     color: pink;
-    text-decoration: none;
 }
 
 h2 {
-    color: red;
+    color: pink;
 }
 
 h3 {
-    color: #007BFF;
+    color: rgb(144, 251, 255);
 }
 
 section{
-    margin: 20px 0;
-    padding: 20px;
     background: darkgray;
-    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
@@ -47,11 +34,10 @@ li , p{
 }
 
 a {
-    color: #007BFF;
-    text-decoration: none;
+    color: #fbff00;
 }
 
 a:hover{
-    color: rgb(0, 255, 13);
-    text-shadow: 1px 1px 5px rgb(89, 0, 255);
+    color: rgb(253, 255, 131);
+    text-shadow: 1px 1px 3px rgb(255, 0, 0);
 }

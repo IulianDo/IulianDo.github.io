@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Iulian</title>
+    <link rel="stylesheet" href="style_base.css">
     <link id="stylesheet" rel="stylesheet" href="style_dark.css">
 
     <script>
@@ -22,25 +23,32 @@
         <button onclick="switchStyle()">Switch Style</button>
     </header>
 
-    <section>
+    <section style="position:absolute;
+            right:20px;
+            left:20px;
+            top:200px;
+            bottom:20px;
+            width: 100% - 20px;
+            height: 100% - 20px;
+            text-align: center;">
         <h2>
             Please select what you would like to be shown.
         </h2>
-        <ul>
-            <li><a href="everything.html">Show me everything</a></li>
-            <li><a href="https://nova-i3.itch.io" target="_blank">Show me games made by I.D.</a></li>
-            <li>These will be filtered versions</li>
+        <ul style="list-style-type: none;">
+            <li><a href="everything.html">Show me everything</a><li>
+            <li><a href="https://nova-i3.itch.io" target="_blank"> Show me games made by I.D. (me)</a></li>
+            <li><a href="CV.pdf" target="_blank">My CV</a></li>
             <li>WIP</li>
         </ul>
     </section>
+    
     <script>
         function switchStyle() {
-        var currentStyle = document.getElementById("stylesheet").getAttribute("href");
-        var newStyle = currentStyle === "style_dark.css" ? "style_light.css" : "style_dark.css";
-        console.log(newStyle);
-        document.getElementById("stylesheet").setAttribute("href", newStyle);
-        localStorage.setItem("selectedStyle", newStyle); // Save the style in local storage
-    }
+            var currentStyle = document.getElementById("stylesheet").getAttribute("href");
+            var newStyle = currentStyle === "style_dark.css" ? "style_light.css" : "style_dark.css";
+            document.getElementById("stylesheet").setAttribute("href", newStyle);
+            localStorage.setItem("selectedStyle", newStyle); // Save the style in local storage
+        }
     </script>
 </body>
 </html>

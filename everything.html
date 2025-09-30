@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Iulian</title>
+    <title>Learning about Iulian</title>
+    <link rel="stylesheet" href="style_base.css">
     <link id="stylesheet" rel="stylesheet" href="style_dark.css">
 
     <script>
         window.onload = function() {
             var savedStyle = localStorage.getItem("selectedStyle");
-            if (savedStyle) {
-                document.getElementById("stylesheet").setAttribute("href", savedStyle);
-            }
+            var light = savedStyle === "style_dark.css" ? "J2MR_L" : "J2MR_D";
+
+            document.getElementById(light).setAttribute("style", "display:none");
+            var light = savedStyle === "style_dark.css" ? "J2MR_D" : "J2MR_L";
+            document.getElementById(light).setAttribute("style", "display:inherit");
+            document.getElementById("stylesheet").setAttribute("href", savedStyle);
         };
     </script>
     
@@ -23,6 +27,7 @@
     <p>Graduated from Queen Mary University of London</p>
 </header>
 <nav>
+    <a href="index.html"><button>⌂</button></a>
     <a href="#About me">About me</a>|
     <a href="#Skills">Skills</a>|
     <a href="#Links">Links</a>|
@@ -34,16 +39,30 @@
 <h2>About Me</h2>
 
 <section>
+    <h3>Introduction!</h3>
     <p>
         Hello I'm Iulian and I love to work with technology. 
         It fascinates and intrigues me. 
         I am a keen programmer with experience building multiple, self-driven projects, in Python, JavaScript, C#, C, C++, Cool, HTML, PHP, CSS and Java. 
         I enjoy the theoretical and practical sides of programming and am looking to join a team so that I may expand my horizons. 
-        Despite liking programming I also enjoy various other things and if you continue looking I am certain you will see.
+        I also enjoy various other things and if you continue looking I am certain you will see.
 
         If you are looking at this page and are wondering why it is so plane, the reason ir simple. 
+    </p>
+    <p>
         I'm working on something else at the moment. 
     </p>
+</section>
+
+<section>
+    <h3>Details</h3>
+    <ul>
+        <li>First Name: Iulian</li>
+        <li>Surname Name: Dogarescu</li>
+        <li>Current home: Stevenage</li>
+        <li>Phone number: 07903961559</li>
+        <li>Email address: iuli.dogarescu@gmail.com</li>
+    </ul>
 </section>
 
 <br id="Skills">
@@ -135,8 +154,9 @@
 
 
     <section>
-        <h3>Itch.io page</h3>   
-        <iframe frameborder="0" src="https://itch.io/embed/3781078?linkback=true" width="552" height="167"><a href="https://nova-i3.itch.io/just-20-more-rooms">Just 20 More Rooms by Nova_i3</a></iframe>
+        <h3>Game Jam Games</h3>   
+        <iframe id="J2MR_L" style="display:none" frameborder="0" src="https://itch.io/embed/3781078?linkback=true" width="552" height="167"><a href="https://nova-i3.itch.io/just-20-more-rooms">Just 20 More Rooms by Nova_i3</a></iframe>
+        <iframe id="J2MR_D" style="display:inherit;" frameborder="0" src="https://itch.io/embed/3781078?linkback=true&dark=true" width="552" height="167"><a href="https://nova-i3.itch.io/just-20-more-rooms">Just 20 More Rooms by Nova_i3</a></iframe>
     </section>
 </links>
 

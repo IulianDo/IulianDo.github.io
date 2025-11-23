@@ -1,20 +1,20 @@
+:root{
+    --primary-colour: darkred ;
+    --secondery-colour: rgb(144, 251, 255) ;
+}
+
+
 body{
     background-color: rgb(61, 61, 61);
     color: #333;
 }
 
-header {
-    background: #007BFF;
-    color: white;
-}
-
-nav{
-    background: #007BFF;
-    border-color: white;
-}
-
 nav a {
     color: pink;
+}
+
+h1{
+    color: white;
 }
 
 h2 {
@@ -26,8 +26,7 @@ h3 {
 }
 
 section{
-    background: darkgray;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 li , p{

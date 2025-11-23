@@ -26,7 +26,7 @@
     <h1>Iulian Dogarescu</h1>
     <p>Graduated from Queen Mary University of London</p>
 </header>
-<nav id="Sidebar" style="left: -105px;">
+<nav id="Sidebar" style="left: -110px;">
     <button id="SideMarker" onclick="switchStyle()">≣</button>
     <a href="index.html">Back</a>
     <a href="#About me">About me</a>
@@ -180,7 +180,7 @@
 <script>
     function switchStyle() {
         var currentStyle = document.getElementById("Sidebar").getAttribute("style");
-        var newStyle = currentStyle === "left: -105px;" ? "left: 0px;" : "left: -105px;";
+        var newStyle = currentStyle === "left: -110px;" ? "left: -5px;" : "left: -110px;";
         document.getElementById("Sidebar").setAttribute("style", newStyle);
     }
 

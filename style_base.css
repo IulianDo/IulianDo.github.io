@@ -1,3 +1,11 @@
+:root{
+    --primary-colour: white ;
+    --secondery-colour:  rgb(0, 0, 0) ;
+}
+
+
+
+
 body{
     font-family: Verdana,"Times New Roman", Times, serif;
     background-color: #f4f4f4;
@@ -7,24 +15,29 @@ body{
 }
 
 header {
-    background: #007BFF;
-    color: white;
-    padding: 10px 0;
+    margin: 20px;
+    padding: 20px;
+    background: var(--primary-colour);
+    border-radius: 50px;
+    border-style: solid ;
+    border-width: 5px;
+    border-color: var(--secondery-colour);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-align: center;
 }
 
 nav{
-    background: #007BFF;
+    background: var(--primary-colour);
     padding: 20px;
     text-align:center;
     position: fixed;
-    left: -105px;
-    top:0px;
+    left: -110px;
+    top: -5px;
     width: 60px;
     height: 100%;
-    border-style: solid;
-    border-right-width: 2px;
-    border-color: black;
+    border-style: outset;
+    border-width: 5px;
+    border-color: var(--secondery-colour);
 }
 
 #SideMarker{
@@ -33,9 +46,10 @@ nav{
     left: 75px;
     width: 50px;
     height: 50px;
-    border-left: 0px;
     border-color: inherit;
-    color: white;
+    border-width: inherit;
+    border-left: 0px;
+    color: var(--secondery-colour);
     font-size: 20px;
 }
 
@@ -57,8 +71,11 @@ h3 {
 section{
     margin: 20px 0 ;
     padding: 20px;
-    background: white;
-    border-radius: 5px;
+    background: var(--primary-colour);
+    border-radius: 50px;
+    border-style: solid ;
+    border-width: 5px;
+    border-color: var(--secondery-colour);
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 

@@ -3,9 +3,6 @@
     --secondery-colour:  rgb(0, 0, 0) ;
 }
 
-
-
-
 body{
     font-family: Verdana,"Times New Roman", Times, serif;
     background-color: #f4f4f4;
@@ -40,17 +37,23 @@ nav{
     border-color: var(--secondery-colour);
 }
 
-#SideMarker{
+
+button{
     background: inherit;
+    border-color: inherit;
+    border-width: inherit;
+    color: var(--secondery-colour);
+    font-size: 20px;
+    align-self: center;
+    text-shadow: 1px 1px 3px #333 ;
+}
+
+#SideMarker{ 
     position:relative;
     left: 75px;
     width: 50px;
     height: 50px;
-    border-color: inherit;
-    border-width: inherit;
     border-left: 0px;
-    color: var(--secondery-colour);
-    font-size: 20px;
 }
 
 nav a {
@@ -69,7 +72,7 @@ h3 {
 }
 
 section{
-    margin: 20px 0 ;
+    margin: 0px 10px;
     padding: 20px;
     background: var(--primary-colour);
     border-radius: 50px;
@@ -77,6 +80,19 @@ section{
     border-width: 5px;
     border-color: var(--secondery-colour);
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+}
+
+div{
+    margin: 20px 0 ;
+    display:inline-flex;
+}
+
+img{
+    margin: 5px ;
+    width: 250px;
+    height: fit-content;
+    align-self: center;
 }
 
 

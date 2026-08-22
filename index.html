@@ -16,40 +16,9 @@
         };
     </script>
 </head>
-<body>
-    <header>
-        <h1>Welcome to Iulian's website</h1>
-        <p>This website is here to tell you more about me and why you should hire me</p>
-        <button onclick="switchStyle()">Switch Style</button>
-    </header>
-    
 
-    <section style="
-            right:20px;
-            left:20px;
-            top:200px;
-            bottom:20px;
-            width: 100% - 20px;
-            height: 100% - 20px;
-            text-align: center;">
-        <h2>
-            Please select what you would like to be shown.
-        </h2>
-        <ul style="list-style-type: none;  padding:0px;">
-            <li><a href="everything.html">Show me everything</a><li>
-            <li><a href="https://nova-i3.itch.io" target="_blank"> Show me games made by I.D. (me)</a></li>
-            <li><a href="CV.pdf" target="_blank">My CV</a></li>
-            <li><a href="https://uk.linkedin.com/in/iulian-dogarescu-b8584a194" target="_blank">linkedin</a></li>
-        </ul>
-    </section>
-    
-    <script>
-        function switchStyle() {
-            var currentStyle = document.getElementById("stylesheet").getAttribute("href");
-            var newStyle = currentStyle === "style_dark.css" ? "style_light.css" : "style_dark.css";
-            document.getElementById("stylesheet").setAttribute("href", newStyle);
-            localStorage.setItem("selectedStyle", newStyle); // Save the style in local storage
-        }
-    </script>
+<body>
+    <div id="root" style="display: block;"></div>
+    <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>

@@ -1,16 +1,16 @@
 :root{
-    --primary-colour: darkred ;
-    --secondery-colour: rgb(144, 251, 255) ;
+    --primary-colour: #8a43e0;
+    --secondery-colour: aqua;
 }
 
 
 body{
-    background-color: rgb(61, 61, 61);
+    background-color: midnightblue;
     color: #333;
 }
 
 nav a {
-    color: pink;
+    color: white;
 }
 
 h1{
@@ -18,11 +18,11 @@ h1{
 }
 
 h2 {
-    color: pink;
+    color: white;
 }
 
 h3 {
-    color: rgb(144, 251, 255);
+    color: white;
 }
 
 section{
@@ -34,7 +34,7 @@ li , p{
 }
 
 a {
-    color: #fbff00;
+    color: white;
 }
 
 a:hover{

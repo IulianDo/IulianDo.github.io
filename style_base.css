@@ -46,6 +46,7 @@ button{
 
 li button{
     min-width: 200px;
+    margin: 5px;
 }
 
 #SideMarker{ 
@@ -85,7 +86,10 @@ section{
 
 div{
     margin: 20px 0 ;
-    display:inline-flex;
+    
+}
+.container{
+    display: flex;
 }
 
 img{
